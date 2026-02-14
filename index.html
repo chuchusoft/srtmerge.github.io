@@ -115,7 +115,7 @@
           for(var i = 0; i < lines.length; i++){
             s = lines[i];
             // DOS/Windows srt files have lines ending with \r\n
-            if (s.charAt(s.length - 1) == "\r") {
+            if (s != "" && s.charAt(s.length - 1) == "\r") {
               s = s.slice(0, -1);
             }
 
